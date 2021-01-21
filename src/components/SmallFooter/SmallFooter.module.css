@@ -1,0 +1,42 @@
+.footer {
+  display: none;
+  background-color: hsl(235, 24%, 19%);
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  color: rgb(129, 129, 129);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 560px) {
+  .footer {
+    display: flex;
+  }
+}
+
+.footer > p:hover {
+  color: white;
+  cursor: pointer;
+}
+.light p:hover {
+  color: black;
+}
+.footer > p:nth-child(1),
+.footer > p:nth-child(2) {
+  margin-right: 15px;
+}
+
+.active {
+  color: hsl(220, 98%, 61%);
+}
+
+.light {
+  background-color: white;
+}

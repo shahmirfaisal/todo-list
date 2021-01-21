@@ -1,13 +1,34 @@
-body {
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.invert-again {
+  filter: invert(1) hue-rotate(180deg);
+  -webkit-filter: invert(1) hue-rotate(180deg);
+}
+
+.light-mode body {
+  background-image: url("./images/bg-desktop-light.jpg");
+  background-color: hsl(0, 0%, 98%);
+}
+
+body {
+  background-image: url("./images/bg-desktop-dark.jpg");
+  background-size: 100vw 250px;
+  background-repeat: no-repeat;
+  background-color: hsl(235, 21%, 11%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+body,
+button,
+input {
+  font-family: "Josefin Sans", sans-serif;
 }

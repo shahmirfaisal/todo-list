@@ -1,0 +1,20 @@
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid rgb(146, 146, 146);
+  cursor: pointer;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circleHighlight {
+  background: linear-gradient(110deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  border: none;
+}

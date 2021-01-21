@@ -1,0 +1,49 @@
+.listItem {
+  display: flex;
+  background-color: hsl(235, 24%, 19%);
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  color: rgb(212, 212, 212);
+  border-bottom: 1px solid rgb(78, 78, 78);
+}
+
+.listItem > p {
+  margin-left: 25px;
+  flex-grow: 1;
+}
+
+.listItem > i {
+  color: rgb(128, 128, 128);
+  opacity: 0;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.listItem:hover > i {
+  opacity: 1;
+  font-size: 18px;
+}
+
+.completeTodo {
+  text-decoration: line-through;
+  color: rgb(128, 128, 128);
+}
+
+.light .completeTodo {
+  color: rgb(180, 180, 180);
+}
+
+.light {
+  border-bottom: 1px solid rgb(218, 218, 218);
+  background-color: white;
+}
+
+.light p {
+  color: black;
+}

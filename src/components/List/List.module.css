@@ -1,0 +1,15 @@
+.list {
+  list-style-type: none;
+  margin-top: 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.light {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
