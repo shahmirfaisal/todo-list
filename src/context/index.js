@@ -39,7 +39,6 @@ const ContextProvider = ({ children }) => {
   };
 
   const filterTodos = (option) => {
-    console.log(option);
     dispatch({ type: "FILTER_TODOS", option });
   };
 

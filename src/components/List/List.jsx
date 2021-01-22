@@ -3,7 +3,7 @@ import classes from './List.module.css'
 import {ListItem} from '../ListItem/ListItem'
 import {Footer} from '../Footer/Footer'
 import {Context} from '../../context/index'
-import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 
 export const List = () => {
     const context = useContext(Context)

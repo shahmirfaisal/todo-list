@@ -4,7 +4,6 @@ import {Context} from '../../context/index'
 
 export const SmallFooter = () => {
     const context = useContext(Context)
-    const completed = context.state.todos.filter(todo => !todo.isComplete)
 
     return (
         <div className={[classes.footer, context.state.theme === "LIGHT" ? "invert-again" : undefined, context.state.theme === "LIGHT" ? classes.light : undefined].join(" ")}>
